@@ -1,0 +1,20 @@
+<div class="container">
+    <h1>{{book.title}} <small>
+    <a [routerLink]="['/book-edit',book._id]">Edit</a>
+    </small>
+    </h1>
+    <img src="assets/images/beloved.jpg" class="img-responsive">
+    <dl class="list">
+        <dt>Author</dt>
+        <dd>{{book.author }}</dd>
+        <dt>Publication Date</dt>
+        <dd>{{book.year}}</dd>
+        <dt>Language</dt>
+        <dd>{{book.language}}</dd>
+        <dt>Country</dt>
+        <dd>{{book.country}}</dd>
+        <dt>Price</dt>
+        <dd>{{book.price }}</dd>
+
+    </dl>
+</div>
